@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { "Seth Friedman" => "sethfri@gmail.com" }
   s.source       = { :git => "https://github.com/sethfri/SNFSegmentedViewController.git", :tag => "v#{s.version}" }
   s.platform     = :ios, '6.0'
-  s.source_files = 'SNFSegmentedViewController.{h,m}'
+  s.source_files = 'SNFSegmentedViewController/SNFSegmentedViewController.{h,m}'
   s.requires_arc = true
 end
