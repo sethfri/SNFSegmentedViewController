@@ -1,6 +1,6 @@
 # SNFSegmentedViewController
 
-SNFSegmentedViewController is the simplest way to use a `UISegmentedControl` for switching between views. You don't have to worry about View Controller Containment or setting up a kludge of custom empty segues. SNFSegmentedViewController just works.
+SNFSegmentedViewController is the simplest way to use a `UISegmentedControl` for switching between views. You don't have to worry about view controller containment or setting up a kludge of custom empty segues. SNFSegmentedViewController just works.
 
 ## Usage
 
@@ -13,15 +13,15 @@ It's that simple.
 
 ## Installation
 
-Add `SNFSegmentedViewController` to your Podfile if you're using [CocoaPods](http://cocoapods.org/), or add *SNFSegmentedViewController.{h,m}* into your project.
+Add `SNFSegmentedViewController` to your Podfile if you're using [CocoaPods](http://cocoapods.org/), or add `SNFSegmentedViewController.{h,m}` into your project.
 
-SNFSegmentedViewController requires iOS 6.0 and above and requires ARC.
+SNFSegmentedViewController requires iOS 6.0 and above, and it requires ARC.
 
 ## Credits
 
 SNFSegmentedViewController was created by [Seth Friedman](https://github.com/sethfri).
 
-Special thanks to [Bill Shirley](https://github.com/bshirley) for [teaching us how to hide the `UITabBar`](http://stackoverflow.com/questions/1982172/iphone-is-it-possible-to-hide-the-tabbar).
+Special thanks to [Bill Shirley](https://github.com/bshirley) for [demonstrating how to hide the `UITabBar`](http://stackoverflow.com/questions/1982172/iphone-is-it-possible-to-hide-the-tabbar).
 
 ## License
 
