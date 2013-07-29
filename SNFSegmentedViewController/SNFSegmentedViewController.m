@@ -40,23 +40,12 @@
 
 #pragma mark - View Controller Lifecycle
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.segmentedControl.selectedSegmentIndex = self.selectedIndex;
     
     [self hideTabBar];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - IB Action

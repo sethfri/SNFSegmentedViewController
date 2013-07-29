@@ -16,7 +16,6 @@
 		2D8CBCCD17A6A3AC003C3BB8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CBCCC17A6A3AC003C3BB8 /* Default.png */; };
 		2D8CBCCF17A6A3AC003C3BB8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CBCCE17A6A3AC003C3BB8 /* Default@2x.png */; };
 		2D8CBCD117A6A3AC003C3BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CBCD017A6A3AC003C3BB8 /* Default-568h@2x.png */; };
-		2D8CBCDA17A6A3AC003C3BB8 /* SNFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CBCD917A6A3AC003C3BB8 /* SNFViewController.m */; };
 		2D8CBCE417A6A4C1003C3BB8 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CBCE017A6A4C1003C3BB8 /* iPad.storyboard */; };
 		2D8CBCE517A6A4C1003C3BB8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CBCE217A6A4C1003C3BB8 /* iPhone.storyboard */; };
 		2D8CBCE817A6A5BD003C3BB8 /* SNFSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CBCE717A6A5BD003C3BB8 /* SNFSegmentedViewController.m */; };
@@ -36,8 +35,6 @@
 		2D8CBCCC17A6A3AC003C3BB8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2D8CBCCE17A6A3AC003C3BB8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2D8CBCD017A6A3AC003C3BB8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2D8CBCD817A6A3AC003C3BB8 /* SNFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNFViewController.h; sourceTree = "<group>"; };
-		2D8CBCD917A6A3AC003C3BB8 /* SNFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNFViewController.m; sourceTree = "<group>"; };
 		2D8CBCE117A6A4C1003C3BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = SNFSegmentedViewController/en.lproj/iPad.storyboard; sourceTree = "<group>"; };
 		2D8CBCE317A6A4C1003C3BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = SNFSegmentedViewController/en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		2D8CBCE617A6A5BD003C3BB8 /* SNFSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNFSegmentedViewController.h; sourceTree = "<group>"; };
@@ -92,8 +89,6 @@
 				2D8CBCCA17A6A3AC003C3BB8 /* SNFAppDelegate.m */,
 				2D8CBCE017A6A4C1003C3BB8 /* iPad.storyboard */,
 				2D8CBCE217A6A4C1003C3BB8 /* iPhone.storyboard */,
-				2D8CBCD817A6A3AC003C3BB8 /* SNFViewController.h */,
-				2D8CBCD917A6A3AC003C3BB8 /* SNFViewController.m */,
 				2D8CBCE617A6A5BD003C3BB8 /* SNFSegmentedViewController.h */,
 				2D8CBCE717A6A5BD003C3BB8 /* SNFSegmentedViewController.m */,
 				2D8CBCC117A6A3AC003C3BB8 /* Supporting Files */,
@@ -185,7 +180,6 @@
 			files = (
 				2D8CBCC717A6A3AC003C3BB8 /* main.m in Sources */,
 				2D8CBCCB17A6A3AC003C3BB8 /* SNFAppDelegate.m in Sources */,
-				2D8CBCDA17A6A3AC003C3BB8 /* SNFViewController.m in Sources */,
 				2D8CBCE817A6A5BD003C3BB8 /* SNFSegmentedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
