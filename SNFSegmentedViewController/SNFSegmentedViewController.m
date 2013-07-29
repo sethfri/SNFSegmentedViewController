@@ -10,8 +10,6 @@
 
 @interface SNFSegmentedViewController () <UITabBarControllerDelegate>
 
-@property (strong, nonatomic) UISegmentedControl *segmentedControl;
-
 @end
 
 @implementation SNFSegmentedViewController
