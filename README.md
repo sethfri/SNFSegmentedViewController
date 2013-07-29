@@ -5,7 +5,7 @@ SNFSegmentedViewController is the simplest way to use a `UISegmentedControl` for
 ## Usage
 
 Since `SNFSegmentedViewController` is a subclass of `UITabBarController`, all you have to do is:
-* Drag out a `UITabBarController` into a storyboard.
+* Drag out a `UITabBarController` into a storyboard, and embed it in a `UINavigationController`.
 * Wire it up to your views appropriately.
 * Change its class to `SNFSegmentedViewController`.
 
