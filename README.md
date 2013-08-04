@@ -1,6 +1,6 @@
 # SNFSegmentedViewController
 
-SNFSegmentedViewController is the simplest way to use a `UISegmentedControl` for switching between views. You don't have to worry about view controller containment or setting up a kludge of custom empty segues. SNFSegmentedViewController just works.
+SNFSegmentedViewController is the simplest way to use a `UISegmentedControl` to switch between view controllers. You don't have to worry about view controller containment or setting up a kludge of custom empty segues. SNFSegmentedViewController just works.
 
 ## Usage
 
