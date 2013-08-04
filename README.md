@@ -26,3 +26,5 @@ Special thanks to [Bill Shirley](https://github.com/bshirley) for [demonstrating
 ## License
 
 SNFSegmentedViewController is available under the [MIT license](LICENSE).
+
+If you're using SNFSegmentedViewController in your project, I'd love to hear about it! Be sure to [add it to the list](https://github.com/sethfri/SNFSegmentedViewController/wiki/Projects-Using-SNFSegmentedViewController).
