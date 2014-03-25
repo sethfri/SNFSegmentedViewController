@@ -57,7 +57,7 @@
 - (void)configureForInitialization {
     self.delegate = self;
     
-    NSMutableArray *titles = [NSMutableArray array];
+    NSMutableArray *titles = [NSMutableArray arrayWithCapacity:[self.tabBar.items count]];
     
     for (UITabBarItem *tabBarItem in self.tabBar.items) {
         [titles addObject:tabBarItem.title];
@@ -66,11 +66,13 @@
     _segmentedControl = [[UISegmentedControl alloc] initWithItems:[titles copy]];
     _segmentedControl.selectedSegmentIndex = self.selectedIndex;
     
-#if __IPHONE_OS_VERSION_MIN_REQUIRED == __IPHONE_6_0 || __IPHONE_OS_VERSION_MIN_REQUIRED == __IPHONE_6_1
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
     _segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
 #endif
     
-    [_segmentedControl addTarget:self action:@selector(segmentTapped:) forControlEvents:UIControlEventValueChanged];
+    [_segmentedControl addTarget:self
+                          action:@selector(segmentTapped:)
+                forControlEvents:UIControlEventValueChanged];
     
     self.navigationItem.titleView = _segmentedControl;
 }
@@ -79,7 +81,7 @@
 - (void)hideTabBar {
     UITabBar *tabBar = self.tabBar;
     UIView *parent = tabBar.superview; // UILayoutContainerView
-    UIView *content = [parent.subviews objectAtIndex:0];  // UITransitionView
+    UIView *content = [parent.subviews firstObject];  // UITransitionView
     UIView *window = parent.superview;
     
     CGRect tabFrame = tabBar.frame;
