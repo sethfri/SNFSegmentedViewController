@@ -48,7 +48,7 @@
 
 #pragma mark - IB Action
 
-- (IBAction)segmentTapped:(UISegmentedControl *)sender {
+- (void)segmentTapped:(UISegmentedControl *)sender {
     self.selectedIndex = sender.selectedSegmentIndex;
 }
 
@@ -57,10 +57,10 @@
 - (void)configureForInitialization {
     self.delegate = self;
     
-    NSMutableArray *titles = [NSMutableArray arrayWithCapacity:[self.tabBar.items count]];
-    
+    NSMutableArray *titles = [NSMutableArray arrayWithCapacity:self.tabBar.items.count];
+	
     for (UITabBarItem *tabBarItem in self.tabBar.items) {
-        [titles addObject:tabBarItem.title];
+		[titles addObject:tabBarItem.title ?: @""];
     }
     
     _segmentedControl = [[UISegmentedControl alloc] initWithItems:[titles copy]];
@@ -89,6 +89,24 @@
     tabBar.frame = tabFrame;
     content.frame = window.bounds;
     
+}
+
+#pragma mark - UITabBarController overrides
+
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
+	[super setSelectedIndex:selectedIndex];
+	self.segmentedControl.selectedSegmentIndex = selectedIndex;
+}
+
+- (void)setSelectedViewController:(UIViewController *)selectedViewController {
+	[super setSelectedViewController:selectedViewController];
+	self.segmentedControl.selectedSegmentIndex = [self.viewControllers indexOfObject:selectedViewController];
+}
+
+//setViewControllers funnels to this method so we do not need to override that method.
+- (void)setViewControllers:(NSArray *)viewControllers animated:(BOOL)animated {
+	[super setViewControllers:viewControllers animated:animated];
+	[self configureForInitialization];
 }
 
 @end
